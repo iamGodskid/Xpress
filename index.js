@@ -12,8 +12,6 @@ function sendMess(){
   
   const textSect = document.querySelector("#main");
   
-  
-  
   var words = {
     "hello": "hi",
     "good day": "xup?",
@@ -28,7 +26,7 @@ function sendMess(){
     "how you dey": "i bam wella, how area nah?",
     "area dey": "okay na",
     "xpress": "yes, how may i be of help?",
-    "thanks Xpress": "you're welcome",
+    "thanks Xpress": "you're welcome"
   }
   
   var greet = {
@@ -56,7 +54,7 @@ function sendMess(){
   var emotions = {
     "i love you xpress": "i love you too",
     "do you love fruits": "i lobe Apples, Oranges and Mangoes",
-    "do you have friends": "yes, you, you are my best friend",
+    "do you have friends": "yes, you, you are my best friend"
     
   }
   
@@ -72,8 +70,12 @@ function sendMess(){
  
  var say = h + " " + "hours" + " " + m + " " + "minutes";
  
+ var t = time.toLocaleString();
+ 
+ 
   var time_val = {
-    "what says the time": say
+    "what says the time": say,
+    "date and time please": t
   }
   
   if(inputText in words){
@@ -92,11 +94,9 @@ function sendMess(){
     elem.setAttribute('id', 'mess');
     
     textSect.appendChild(elem);
-    
-    
+
     elem.innerHTML = words[inputText];
     
-  
   }
   
   if(inputText in greet){
@@ -117,8 +117,6 @@ function sendMess(){
     
     
     elem.innerHTML = greet[inputText];
-    
-    
   }
   
   if(inputText in sub_def){
@@ -140,8 +138,6 @@ function sendMess(){
     
     
     elem.innerHTML = sub_def[inputText];
-    
-  
   }
   
 if(inputText in emotions){
@@ -232,7 +228,8 @@ if(inputText in time_val){
     
     var say = elem.innerHTML = time_val[inputText];
     
-}  
+} 
+
 if(inputText == "open my browser please"){
   window.open("https://google.com");
 }
@@ -240,4 +237,21 @@ if(inputText == "open my browser please"){
     speech.pitch = 1;
     speechSynthesis.speak(speech);
   
+}
+function switc(){
+  var color = document.getElementById('swi').value;
+  
+  var obj = {
+    "#ff0000": "red",
+    "#00ff00": "green",
+    "#0000ff": "blue",
+    "#000000": "black"
+  }
+  
+  if(color in obj){
+  var body = document.getElementById("bo");
+  var header = document.getElementById("head");
+  
+  body.style.backgroundColor = obj[color];
+  }
 }
