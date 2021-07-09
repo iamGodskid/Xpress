@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,10 +8,10 @@
 </head>
 <body id="bo">
   <header id="head">
-  <span id="username">...</span>
   <input type="color" id="swi" placeholder="switch theme"/>
   <button id="b" onclick="switc()">Switch theme</button>
   </header>
+<hr/>
 	<div id="main">
 	  
 	</div>
