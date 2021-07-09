@@ -13,10 +13,11 @@
   background: mediumseagreen;
 }
 #chatsect{
-  background: none;
+  background: darkslateblue;
   border-top: 2px inset gray;
   height: 60px;
   width: 100%;
+opacity: 0.85;
   position: fixed;
   left: 0px;
   right: 0px;
