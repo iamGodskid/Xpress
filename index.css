@@ -17,11 +17,12 @@
   border-top: 2px inset gray;
   height: 60px;
   width: 100%;
-opacity: 0.85;
+opacity: 0.75;
   position: fixed;
   left: 0px;
   right: 0px;
   top: 87%;
+bottom: 0px;
 }
 #btn{
  border: none;
