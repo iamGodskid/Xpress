@@ -1,5 +1,4 @@
-#XPRESSBOT..
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,9 +7,11 @@
   <script src="index.js"></script>
   <title>BOT</title>
 </head>
-<body>
-  <header>
+<body id="bo">
+  <header id="head">
   <span id="username">...</span>
+  <input type="color" id="swi" placeholder="switch theme"/>
+  <button id="b" onclick="switc()">Switch theme</button>
   </header>
 	<div id="main">
 	  
